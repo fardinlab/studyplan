@@ -1,0 +1,328 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f8ff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* Common Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+/* Navigation */
+
+nav{
+    background-color: #1e1c1c;
+
+    padding: 15px 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+
+.logo img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    margin-right: 12px;
+}
+
+/* Website Name */
+
+.logo a{
+    color: rgb(11, 245, 117);
+    text-decoration: none;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+
+.nav-area a{
+    color: rgb(6, 241, 104);
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 16px;
+}
+
+.nav-area a:hover{
+    color: #fcbb25;
+}
+
+/* Navigation এর নিচে কন্টেন্ট লুকিয়ে না যাওয়ার জন্য */
+body {
+    padding-top: 60px;
+}
+
+/* Home Section */
+.home-section {
+    background: linear-gradient(to right, #0b63ce, #aade41);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.home-section h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.home-section p {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    background-color: white;
+    color: #0b63ce;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.white-section {
+    background-color: white;
+}
+
+.section h2 {
+    color: #0b63ce;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Details Box */
+.details-box {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 25px;
+    border-left: 6px solid #3ccf78;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.details-box p {
+    margin-bottom: 8px;
+}
+
+/* Cards */
+.card-area,
+.team-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card,
+.team-card {
+    background-color: #f3f8ff;
+    width: 280px;
+    padding: 25px;
+    border: 1px solid #d7e7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+}
+
+.card h3,
+.team-card h3 {
+    color: #0b63ce;
+    margin-bottom: 10px;
+}
+
+/* Planner Box */
+.planner-box {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 6px solid #0b63ce;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background-color: #0b63ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3ccf78;
+    color: #111;
+}
+
+/* Summary */
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 22px 0;
+    font-weight: bold;
+}
+
+/* Plan List */
+#planList {
+    list-style: none;
+    text-align: left;
+}
+
+.plan-item {
+    background-color: #f3f8ff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 5px solid #0b63ce;
+    border-radius: 5px;
+}
+
+.plan-item h3 {
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.plan-item p {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.completed {
+    border-left: 5px solid #3ccf78;
+    opacity: 0.8;
+}
+
+.completed h3 {
+    text-decoration: line-through;
+}
+
+.action-btn {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.done-btn {
+    background-color: #3ccf78;
+    color: #111;
+}
+
+.delete-btn {
+    background-color: #111;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .nav-area a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .home-section h2 {
+        font-size: 28px;
+    }
+
+    .home-section p {
+        width: 100%;
+    }
+
+    .details-box,
+    .planner-box {
+        width: 100%;
+    }
+
+    .summary {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+
+    <!-- Navigation Section -->
+
+<nav>
+
+    <!-- Logo + Website Name -->
+    <div class="logo">
+
+        <img src="https://surl.lu/bhcnlp" alt="Logo">
+
+        <a href="#">
+            Student Study Planner
+        </a>
+
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-area">
+
+        <a href="#home">Home</a>
+        <a href="#project">Project Details</a>
+        <a href="#planner">Planner</a>
+        <a href="#team">Team</a>
+
+    </div>
+
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to Student Study Planner</h2>
+            <p>
+                Students can add their study tasks,
+                select date, start time, end time and track their daily study plan.
+            </p>
+            <a class="main-btn" href="#planner">Create Study Plan</a>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section id="details" class="section">
+        <div class="container">
+            <h2>Project Details</h2>
+
+            <div class="details-box">
+                <p><b>Institute:</b> Jashore Polytechnic Institute</p>
+                <p><b>Department:</b> Computer Technology</p>
+                <p><b>Subject:</b> Web Design & Development-II</p>
+                <p><b>Semester:</b> 5th</p>
+                <p><b>Teacher:</b> Tamanna Halima Santa</p>
+                <p><b>Submission Date:</b> 17-06-2026</p>
+                <p><b>Submission Time:</b> 03:30 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section white-section">
+        <div class="container">
+            <h2>About This Website</h2>
+            <p>
+                Many students forget their study schedule and waste time. This website helps
+                students make a simple study routine.
+            </p>
+
+            <div class="card-area">
+                <div class="card">
+                    <h3>Add Task</h3>
+                    <p>Add subject name or study task easily.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Set Time</h3>
+                    <p>Select date, start time and end time.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Track Study</h3>
+                    <p>Mark study tasks as completed or Deleted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planner Section -->
+    <section id="planner" class="section">
+        <div class="container">
+            <h2>Study Planner</h2>
+
+            <div class="planner-box">
+                <form id="studyForm">
+                    <label>Study Task</label>
+                    <input type="text" id="taskName" placeholder="Example: Read JavaScript Chapter" required>
+
+                    <label>Date</label>
+                    <input type="date" id="taskDate" required>
+
+                    <label>Start Time</label>
+                    <input type="time" id="startTime" required>
+
+                    <label>End Time</label>
+                    <input type="time" id="endTime" required>
+
+                    <label>Priority</label>
+                    <select id="priority">
+                        <option value="Normal">Normal</option>
+                        <option value="Important">Important</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+
+                    <button type="submit">Add Plan</button>
+                </form>
+
+                <div class="summary">
+                    <p>Total Plans: <span id="totalPlan">0</span></p>
+                    <p>Completed: <span id="completedPlan">0</span></p>
+                </div>
+
+                <ul id="planList"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section white-section">
+        <div class="container">
+            <h2>Team Members</h2>
+
+            <div class="team-area">
+                <div class="team-card">
+                    <h3>Fardin Sagor</h3>
+                    <p><b>Roll:</b> 832340</p>
+                    <p>Project Leader & Developer</p>
+                </div>
+
+                <div class="team-card">
+                    <h3>Rabeya Khatun</h3>
+                    <p><b>Roll:</b> 832322</p>
+                    <p>Designer</p>
+                </div>
+
+                <div class="team-card">
+                    <h3>Jubaer Hasan</h3>
+                    <p><b>Roll:</b> 832299</p>
+                    <p>Tester & Documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project info / Footer Info Section -->
+    <section id="Project info" class="section">
+        <div class="container">
+            <h2>Project Information</h2>
+            <p>
+                This project is developed for Web Design & Development-II subject.
+                The main goal is to build a simple and useful study planning website.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Student Study Planner | Jashore Polytechnic Institute</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
