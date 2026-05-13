@@ -92,21 +92,6 @@ function deletePlan(index) {
 showPlans();
 
 
-// Navigation scroll effect
-window.addEventListener("scroll", function () {
 
-    const nav = document.querySelector("nav");
-
-    if (window.scrollY > 100) {
-
-        // নিচে স্ক্রল করলে transparent হবে
-        nav.style.background = "transparent";
-
-    } else {
-
-        // উপরে থাকলে আবার কালো হবে
-        nav.style.background = "#1e1c1c";
-
-    }
 
 });
