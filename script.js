@@ -90,8 +90,3 @@ function deletePlan(index) {
 
 // Load saved plans when page opens
 showPlans();
-
-
-
-
-});
